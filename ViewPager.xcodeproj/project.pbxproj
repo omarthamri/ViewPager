@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76089A8F21B2D14300FEB122 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76089A8E21B2D14300FEB122 /* Page.swift */; };
 		765A09E821AAE271009BFDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A09E721AAE271009BFDAC /* AppDelegate.swift */; };
-		765A09EA21AAE271009BFDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A09E921AAE271009BFDAC /* ViewController.swift */; };
 		765A09ED21AAE271009BFDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765A09EB21AAE271009BFDAC /* Main.storyboard */; };
 		765A09F021AAE271009BFDAC /* ViewPager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 765A09EE21AAE271009BFDAC /* ViewPager.xcdatamodeld */; };
 		765A09F221AAE271009BFDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765A09F121AAE271009BFDAC /* Assets.xcassets */; };
 		765A09F521AAE271009BFDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765A09F321AAE271009BFDAC /* LaunchScreen.storyboard */; };
 		765A0A0021AAE271009BFDAC /* ViewPagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A09FF21AAE271009BFDAC /* ViewPagerTests.swift */; };
 		765A0A0B21AAE271009BFDAC /* ViewPagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A0A0A21AAE271009BFDAC /* ViewPagerUITests.swift */; };
+		76B52D6E21B1D03B0063D004 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B52D6D21B1D03B0063D004 /* SwipeViewController.swift */; };
+		76B52D7021B1D9490063D004 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B52D6F21B1D9490063D004 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76089A8E21B2D14300FEB122 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		765A09E421AAE271009BFDAC /* ViewPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765A09E721AAE271009BFDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		765A09E921AAE271009BFDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		765A09EC21AAE271009BFDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		765A09EF21AAE271009BFDAC /* ViewPager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViewPager.xcdatamodel; sourceTree = "<group>"; };
 		765A09F121AAE271009BFDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		765A0A0621AAE271009BFDAC /* ViewPagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewPagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765A0A0A21AAE271009BFDAC /* ViewPagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerUITests.swift; sourceTree = "<group>"; };
 		765A0A0C21AAE271009BFDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B52D6D21B1D03B0063D004 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		76B52D6F21B1D9490063D004 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76089A8D21B2D13300FEB122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76089A8E21B2D14300FEB122 /* Page.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		765A09DB21AAE271009BFDAC = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +111,10 @@
 		765A09E621AAE271009BFDAC /* ViewPager */ = {
 			isa = PBXGroup;
 			children = (
+				76089A8D21B2D13300FEB122 /* Models */,
+				765A0A1921AAE54F009BFDAC /* Views */,
+				765A0A1821AAE52D009BFDAC /* Controllers */,
 				765A09E721AAE271009BFDAC /* AppDelegate.swift */,
-				765A09E921AAE271009BFDAC /* ViewController.swift */,
-				765A09EB21AAE271009BFDAC /* Main.storyboard */,
 				765A09F121AAE271009BFDAC /* Assets.xcassets */,
 				765A09F321AAE271009BFDAC /* LaunchScreen.storyboard */,
 				765A09F621AAE271009BFDAC /* Info.plist */,
@@ -126,6 +139,23 @@
 				765A0A0C21AAE271009BFDAC /* Info.plist */,
 			);
 			path = ViewPagerUITests;
+			sourceTree = "<group>";
+		};
+		765A0A1821AAE52D009BFDAC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76B52D6D21B1D03B0063D004 /* SwipeViewController.swift */,
+				76B52D6F21B1D9490063D004 /* PageCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		765A0A1921AAE54F009BFDAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				765A09EB21AAE271009BFDAC /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765A09EA21AAE271009BFDAC /* ViewController.swift in Sources */,
+				76B52D7021B1D9490063D004 /* PageCell.swift in Sources */,
+				76089A8F21B2D14300FEB122 /* Page.swift in Sources */,
 				765A09E821AAE271009BFDAC /* AppDelegate.swift in Sources */,
 				765A09F021AAE271009BFDAC /* ViewPager.xcdatamodeld in Sources */,
+				76B52D6E21B1D03B0063D004 /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,4 +6,9 @@
 //  Copyright © 2018 MACBOOK PRO RETINA. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct Page {
+    let imageName: String
+    let headerText: String
+}
